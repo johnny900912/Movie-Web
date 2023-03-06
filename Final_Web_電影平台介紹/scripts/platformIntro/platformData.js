@@ -1,0 +1,72 @@
+const platformData = [
+		{
+			title:'Netflix',
+			logoSrc: './Final_Web_電影平台介紹/images/platform/0.png',
+			imgSrc: './Final_Web_電影平台介紹/images/platform/detail/0.png',
+			txt: '從 2016 年初登台至今，在影集這塊 Netflix 真的無人能敵。除了自家的原創影集外，美國各電視網播出的戲劇也可以看的到，不少也是同步播出。近兩年拓展亞洲市場，不僅有華語原創影集，也與韓國電視工作室 Studio Dragon 、JTBC Content Hub 簽訂合約，帶來許多 On 檔韓劇同日上架，吸引不少韓劇迷訂閱。<br><br>  至於電影的部分除了原創電影外，強檔電影能在該平台上觀賞到的比例較低。不過有時候看 Netflix 上架的電影就像在挖寶一樣，會意外找到許多偏冷門的各國外語片。紀錄片影集也是 N 家的一大強項。<br><br>訂閱方案：<br>1)單月新台幣 270 元<br>2)單月新台幣 330 元<br>3)單月新台幣 390 元',
+			link: 'https://www.netflix.com/browse',
+		},
+		{
+			title:'Apple TV+',
+			logoSrc: './Final_Web_電影平台介紹/images/platform/1.jpg',
+			imgSrc: './Final_Web_電影平台介紹/images/platform/detail/1.jpg',
+			txt: '科技業龍頭蘋果 2019 年底加入這場串流大戰，在全球推出 Apple TV+，首波並找來眾多好萊塢大咖加持，推出《晨間直播秀》、《末日光明》等劇。從電腦版介面看來，現在擁有的功能還滿陽春的。由於片庫僅有幾部原創影集作品，所以現在也還沒有分類項目出現。<br><br>上架方式若為劇情類影集是上架當日先釋出三集，後續每周更新一集；喜劇類影集則為一次上架。但也有例外，如近期上線的《幻異傳奇》就採用一周更新一集的方式。<br><br>訂閱方案僅一種：<br>單月新台幣 170 元，可享免費試用 7 天',
+			link: 'https://tv.apple.com/tw',
+		},
+		{
+			title:'iQIYI',
+			logoSrc: './Final_Web_電影平台介紹/images/platform/2.jpg',
+			imgSrc: './Final_Web_電影平台介紹/images/platform/detail/2.jpg',
+			txt: '愛奇藝目前的最大優勢是戲劇和綜藝，尤其是以韓劇、陸劇為主。同步跟播顯然是吸引訂戶的一大因素，每檔少說都有五、六部會在愛奇藝台灣站周周更新，且都是話題性十足的作品。綜藝則以韓綜、陸綜的節目居多，也多是同日更新播出。<br><br>電影強檔新片這塊即使加入會員也多需要用單租券觀看， VIP 會員每月有兩張免費租借券。若不想加入會員也有部分戲劇節目是可以免費觀看。<br><br>訂閱方案：<br>1)單月新台幣 239 元<br>2)一季新台幣 630 元<br>3)年租新台幣 1899 元',
+			link: 'https://www.iq.com/?from=iqiyi_tw',
+		},
+		{
+			title:'Prime Video',
+			logoSrc: './Final_Web_電影平台介紹/images/platform/3.jpg',
+			imgSrc: './Final_Web_電影平台介紹/images/platform/detail/3.jpg',
+			txt: '亞馬遜在 2017 年中將 Prime Video 獨立分開在許多國家上線，台灣也在此波上線的行列。歷經多年調整改進，現在主要介面已中文化，約 90 % 的節目也有繁體中文字幕。比起影集，電影的數量較多，不過在分類上依舊差強人意，對使用者來說較難搜尋到想找的節目。<br><br>訂閱方案僅一種：<br>單月美金 5.99（約新台幣 181 元',
+			link: 'https://www.primevideo.com/',
+		},
+		{
+			title:'LINE TV',
+			logoSrc: './Final_Web_電影平台介紹/images/platform/4.jpg',
+			imgSrc: './Final_Web_電影平台介紹/images/platform/detail/4.jpg',
+			txt: 'LINE TV 原為免費的平台，但在與 CHOCO TV 追劇瘋合併後，擁有了大量的片庫，主要以戲劇為主，同日跟播比例較高的戲劇依序為韓劇、台劇。若付費成為 VIP 會員，觀看影片可享有高畫質解析度，以及有更多電影可以觀看。<br><br>訂閱方案：<br>1)單月新台幣 159 元<br>2)單季新台幣 420 元<br>3)年訂新台幣 1440 元',
+			link: 'https://www.linetv.tw/',
+		},
+		{
+			title:'friDay',
+			logoSrc: './Final_Web_電影平台介紹/images/platform/5.png',
+			imgSrc: './Final_Web_電影平台介紹/images/platform/detail/5.jpg',
+			txt: '遠傳旗下推出的 friDay 影音以電影為主，也有戲劇、動漫、娛樂等內容。強檔新片與它台數量差不多，但使用月租方案有新片觀看限制，若單月超過兩部還是必須另外付費觀看。整體片庫算豐富，介面設計簡單，有許多分類可以搜尋。網路上時常有網站分享優惠序號，只要輸入就可以獲得一段免費觀看時間，若想訂閱的人可以先用此方式試用看看。<br><br>訂閱方案：<br>1)自動續租單月新台幣 199 元<br>2)儲值方案依照天數計算<br>3)單片自由選單月新台幣 250 元',
+			link: 'https://video.friday.tw/',
+		},
+		{
+			title:'LiTV',
+			logoSrc: './Final_Web_電影平台介紹/images/platform/6.jpg',
+			imgSrc: './Final_Web_電影平台介紹/images/platform/detail/6.jpg',
+			txt: 'LiTV結合影劇隨選隨看和電視頻道直播的服務。電影方面新片上架速度和數量比 CATCHPLAY+ 和 friDay 影城少一點，戲劇部分同步 On 檔的也不多，不過很多都是可以免費觀看的。另一主打頻道有上百台的電視頻道可以在線上觀看。月付會員同樣非全部片庫無限次觀看，單租影片需再加價租借。<br><br>訂閱方案：<br>1)單月新台幣 150 元，隨選影片<br>2)單月新台幣 268 元，頻道全餐<br>3)單月新台幣 299 元，電視頻道加隨選影片',
+			link: 'https://www.litv.tv/',
+		},
+		{
+			title:'KKTV',
+			logoSrc: './Final_Web_電影平台介紹/images/platform/7.png',
+			imgSrc: './Final_Web_電影平台介紹/images/platform/detail/7.jpg',
+			txt: 'KKTV 主打戲劇和動漫，戲劇部分特別著重日劇，有不少同步跟播的 On 檔劇。除了免費專區外，通常戲劇的一到三集可以免費看，後續集數就要註冊升級為 VIP 會員才可看。方案有分定期跟單次購買兩種，也有再細分單月或單季的選項。如果為首次訂閱還有一個月的免費收看。<br><br>訂閱方案：<br>1)定期、單次每季新台幣 447 元<br>2)定期、單次每月新台幣 149 元<br>3)KKTV 加購 KKBOX 服務單月新台幣 199 元',
+			link: 'https://www.kktv.me/',
+		},
+		{
+			title:'WeTV',
+			logoSrc: './Final_Web_電影平台介紹/images/platform/8.png',
+			imgSrc: './Final_Web_電影平台介紹/images/platform/detail/8.jpg',
+			txt: '騰訊旗下的 WeTV 在 2019 年中登台，最大的優勢是陸劇跟陸綜，不少話題新劇都在平台上跟播，也有不少是獨播。若未註冊會員付費已有 80 % 的節目可看，若成為 VIP 則可以搶先看到最新集數。剛登台時月費很便宜，現在調整到與其它影視平台差不多的價格。<br><br>訂閱方案：<br>1)單月新台幣 190 元<br>2)一季新台幣 550 元<br>3)年租新台幣 1890 元',
+			link: 'https://wetv.vip/zh-tw',
+		},
+		{
+			title:'CATCHPLAY+',
+			logoSrc: './Final_Web_電影平台介紹/images/platform/9.png',
+			imgSrc: './Final_Web_電影平台介紹/images/platform/detail/9.jpg',
+			txt: 'CATCHPLAY ON DEMAND 已改名為 CATCHPLAY+，以電影為主，周周都有強檔新片更新。在各家影音平台網站的設計美感、搜尋功能比較上，我會給這家較高的分數。影片皆有試看五分鐘的預覽功能，結合 IMDb 的評分，導演、演員名單齊全，還有結合電影新訊和影評專欄的區塊，是結合較多功能的電影影音平台。<br><br>這兩年除了電影外，也開始有上架影集，台劇、歐美劇和日劇等，但數量不多。影集的第一集都可以免費觀看。若單純加入會員不付費，可使用每月任選十部「限定免費看」專區。若為月付會員在方案期間內可無限觀看「無限看」專區的影片，並可享單租影片折扣。<br><br>訂閱方案僅一種：<br>單月新台幣 199 元',
+			link: 'https://www.catchplay.com/tw/home',
+		}
+	]

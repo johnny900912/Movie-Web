@@ -1,0 +1,381 @@
+:root{
+     --main-color: #c0392b; 
+     --body-bg: #181616;
+     --box-bg:#221f1f;
+     --text-color:#ffffff;
+     --space-top:30px;
+      
+     --nav-high:60px; 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Cairo', sans-serif; 
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    padding-top: var(--nav-high) ;
+}
+
+a{
+     text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main-color{
+    color: var(--main-color);
+}
+.container{
+    max-width: 1920px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0,0,0.5);
+}
+
+.nav-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #000000;
+} 
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    color: var(--text-color);
+    height: var(--nav-high) ;
+}
+
+.nav a{
+    color: var(--text-color); 
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.nav-menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.nav-menu li~li{
+    margin-left: 30px;
+}
+
+.nav-menu a{
+    text-transform: uppercase;
+    font-weight: 700 ;
+}
+
+.nav-menu a:hover{
+    color: var(--main-color);
+}
+.nav-menu a.btn:hover ,
+ a.logo:hover{
+    color: unset;
+}
+.btn{
+    color: #ffffff;
+    padding: .25rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+}
+.btn-hover::before{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-color);
+    transition: .3s ease-in-out;
+}
+.btn-hover:hover::before {
+    width: 100%;
+}
+.btn span{
+    z-index: 1 ;
+}
+
+
+.main-slide-item{
+    padding-top: 40%;
+    position: relative;
+    overflow: hidden ;
+}
+.main-slide-item img{
+    width: 100%;
+    position: absolute ;
+    top: 0;
+    left: 0;
+
+}
+.main-slide-item-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--text-color);
+    display: flex;
+}
+.item-content-wraper{
+    padding-left:5rem;
+    width: 40%;
+    background-color: rgba(0, 0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.item-content-wraper::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100% ;
+    background: linear-gradient(to right,rgba(0,0,0,0.8),rgbq(0,0,0,0));
+}
+
+.item-content-tittle{
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight:900;
+}
+.movie-infos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: calc((--space-top)/3);
+}
+.movie-info{
+    display: flex;
+    align-items: center ;
+    font-size: -8rem;
+    font-weight: 600;
+}
+.movie-info span{
+    margin-left: 5px;
+}
+
+.movie-info i{
+    color: var(--main-color);
+}
+.movie-info~.movie-info{
+    margin-left: 5px;
+}
+.item-contnet-description{
+    font-size: 1,15rem;
+    margin-top: var(--space-top);
+    line-height: 1.5rem;
+}
+.item-action{
+    margin-top: var(--space-top);
+
+}
+.carousel-nav-center{
+    position: relative;
+}
+.carousel-nav-center .owl-nav button i{
+    font-size: 3rem ;
+
+}
+.copyright{
+    color: white;
+}
+/*represent*/
+@media only screen and (max-width:979px)and (min-width:600px)
+{
+    html{
+        font-size: 12px;
+    }
+}
+
+/* 關閉 Scrollbar */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Page name */
+.title {
+    text-align: left;
+    padding-left: 5%;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 10px 0 5px 0;
+}
+
+/* Category Filter setting */
+#categorySelect {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-bottom: 30px;
+}
+
+#categorySelect > p {
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding-left: 80%;
+    color: #C0372C;
+}
+
+#cat_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#All, #Action, #Adventure, #Drama, #Comedy, #Horror, #Thriller, #Romance, 
+#Suspense, #Fantasy, #Scifi, #Anime {
+    border: 1px solid white;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#All:hover, #Action:hover, #Adventure:hover, #Drama:hover, #Comedy:hover, 
+#Horror:hover, #Thriller:hover, #Romance:hover, #Suspense:hover, #Fantasy:hover, 
+#Scifi:hover, #Anime:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Card Area */
+#movieOverview {
+    display: grid;
+    /* 一行 5 部電影：(5, 19%)、一行 6 部電影：(6, 15%) */
+    grid-template-columns: repeat(6, 15%); 
+    justify-content: center;
+}
+
+.movieCard {
+    position: relative;
+    border-radius: 10px;
+    /* width 設定：5 部 270px、6 部 230px */
+    width: 230px;
+    height: 460px;
+    margin: 20px 10px 10px 10px;
+    top: 0;
+    place-self: center;
+}
+
+/* Information in Card */
+.movieCard img {
+    /* max-width: 90%; */
+    width: 300px;
+    max-height: 90%;
+    height: 350px;
+    object-fit: cover;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.movieInfo {
+    padding: 0 10px 0 10px;
+}
+
+.chinese-name {
+    font-size: 1.125rem;
+}
+
+.english-name {
+    font-size: 1rem;
+    color: #C0372C;
+}
+
+/* Movie Detail Show Area */
+#movieContent {
+    display: none;
+    background: hsla(0, 0%, 100%, 1);
+    color: black;
+    position: fixed;
+    top: 60px;
+    max-width: 100%;
+    width: 100%;
+    height: 92%;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+/* Close button */
+#close {
+    display: flex;
+    float: right;
+    margin: 6px 6px 6px 13px;
+    cursor: pointer;
+}
+
+#close p {
+    font-size: 1.25rem;
+    padding: 0 13px 0 13px;
+}
+
+#close:hover {
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+}
+
+#close:active {
+    background-color: darkred;
+}
+
+/* Movie poster setting */
+#poster img {
+    display: flex;
+    float: left;
+    max-width: 25%;
+    padding: 30px 0 0 30px;
+}
+
+/* Movie Detail Text setting */
+#textArea {
+    position: fixed;
+    left: 25%;
+    padding: 40px 0 0 30px;
+    width: 70%;
+    font-size: 1.125rem;
+    overflow-y: auto;
+}
+
+.chineseName p {
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+.englishName p {
+    font-size: 1.25rem;
+}
+
+#desc {
+    text-indent: 2em;
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        留言分享區- 嗑嗑報電影
+    </title>
+    <!------logo-->
+    <link rel="icon" href="./Final_Web_關於我們/images/ADTMI_Logo.png">
+    <!--google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!--OWL CAR-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--box-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--app css-->
+    <link rel="stylesheet" href="./Final_Web_留言分享區/comment.css">
+</head>
+<style>
+</style>
+<body>
+    <!------nav-->
+    <div class="nav-wrapper">
+        <div class="container">
+           <div class="nav">
+              <a href="#" class="logo">
+                <i class='bx bx-movie bx-tada main-color'></i>嗑嗑<span class="main-color ">報</span>電影
+              </a>
+              <ul class="nav-menu" id="nav-menu">
+                  <li><a href="./index.html">首頁</a></li>
+                  <li><a href="./movieinfo.html">電影介紹</a></li>
+                  <li><a href="./platform.html">各大平台 </a></li>
+                  <li><a href="#">留言分享區</a></li>
+                  <li><a href="./about us.html">關於我們</a></li>
+                  <li>
+                      <a href="#" class="btn btn-hover">
+                          <span>登入 </span>
+                      </a>
+                    </li>          
+              </ul>
+           </div>
+        </div>
+    </div>
+    <!-----end nav-->
+    <form action="./index.html" method="post" class="smart-green">
+        <h1>留言資訊
+            <span>請留下你的資訊.</span>
+        </h1>
+        <label>
+            <span>姓名 :</span>
+            <input id="name" type="text" name="name" class="error" placeholder="請輸入您的姓名"/>
+            <div class="error-msg"></div>
+        </label>
+    
+        <label>
+            <span>郵箱 :</span>
+            <input id="email" type="email" value="" name="email" placeholder="請輸入郵箱地址"/>
+            <div class="error-msg"></div>
+        </label>
+    
+        <label>
+            <span>聯絡地址 :</span>
+            <input id="address" type="text" value="" name="address" placeholder="請輸入聯絡地址"/>
+            <div class="error-msg"></div>
+        </label>
+    
+        <label>
+            <span>留言 :</span>
+            <textarea id="message" name="message"  placeholder="請輸入你的建議"></textarea>
+            <div class="error-msg"></div>
+        </label> 
+            <input type="submit" class="button" onclick="myFunction()" value="提交"/>
+        </label>
+    </form>
+       <script>
+      function myFunction() {
+      var txt;
+       if (confirm("感謝你的留言！")) {
+        txt = "You pressed OK!";
+         } else {
+           txt = "You pressed Cancel!";
+         }
+         document.getElementById("demo").innerHTML = txt;
+            }
+      </script>
+    </body>
+    </html>
+</html>
