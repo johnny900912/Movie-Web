@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        電影介紹 - 嗑嗑報電影
+    </title>
+    <!------logo-->
+    <link rel="icon" href="./Final_Web_關於我們/images/ADTMI_Logo.png">
+    <!--google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!--OWL CAR-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--box-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- style for website -->
+    <link rel="stylesheet" href="./Final_Web_電影介紹/styles/styleForMovieIntro.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Movie data file -->
+    <script src="./Final_Web_電影介紹/scripts/movieInfo.js"></script>
+    <!-- Website content control script -->
+    <script src="./Final_Web_電影介紹/scripts/ContentControlScript.js"></script>
+</head>
+<body>
+    <!--nav-->
+    <div class="nav-wrapper">
+        <div class="container">
+           <div class="nav">
+              <a href="#" class="logo">
+                <i class='bx bx-movie bx-tada main-color'></i>嗑嗑<span class="main-color ">報</span>電影
+              </a>
+              <ul class="nav-menu" id="nav-menu">
+                  <li><a href="./index.html">首頁</a></li>
+                  <li><a href="#">電影介紹</a></li>
+                  <li><a href="./platform.html">各大平台 </a></li>
+                  <li><a href="./comment.html">留言分享區</a></li>
+                  <li><a href="./about us.html">關於我們</a></li>
+                  <li>
+                      <a href="#" class="btn btn-hover">
+                          <span>登入 </span>
+                      </a>
+                    </li>          
+              </ul>
+           </div>
+        </div>
+    </div>
+    <!--end nav-->
+    <div>
+        <p class="title" id="movie-overview">電影介紹</p>
+    </div>
+
+    <div id="categorySelect">
+        <p>選擇分類</p>
+        <div id="cat_btn">
+            <div id="All">全部</div>
+            <div id="Action">動作片</div>
+            <div id="Adventure">冒險片</div>
+            <div id="Drama">劇情片</div>
+            <div id="Comedy">喜劇片</div>
+            <div id="Horror">恐怖片</div>
+            <div id="Thriller">驚悚片</div>
+            <div id="Romance">愛情片</div>
+            <div id="Suspense">懸疑片</div>
+            <div id="Fantasy">奇幻片</div>
+            <div id="Scifi">科幻片</div>
+            <div id="Anime">動畫片</div>
+        </div>
+    </div>
+
+    <div id="movieOverview">
+        <div class="movieCard horror">
+            <img src="./Final_Web_電影介紹/images/2021movie/A_Quiet_Place_Part_II.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">噤界II</p>
+                <p class="english-name">A Quiet Place Part II</p>
+                <p class="publish-date">2021-06-09</p>
+            </div>
+        </div>
+
+        <div class="movieCard fantasy">
+            <img src="./Final_Web_電影介紹/images/2021movie/Twiceborn.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">相信黎明的到來</p>
+                <p class="english-name">Twiceborn</p>
+                <p class="publish-date">2021-05-14</p>
+            </div>
+        </div>
+
+        <div class="movieCard suspense thriller">
+            <img src="./Final_Web_電影介紹/images/2021movie/SPIRAL_FROM_THE_BOOK_OF_SAW.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">死亡漩渦：奪魂鋸新遊戲</p>
+                <p class="english-name">Spiral: From the Book of Saw</p>
+                <p class="publish-date">2021-05-12</p>
+            </div>
+        </div>
+
+        <div class="movieCard action horror thriller">
+            <img src="./Final_Web_電影介紹/images/2021movie/Wrath_of_Man.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">玩命鈔劫</p>
+                <p class="english-name">Wrath of Man</p>
+                <p class="publish-date">2021-04-29</p>
+            </div>
+        </div>
+
+        <div class="movieCard anime action suspense thriller">
+            <img src="./Final_Web_電影介紹/images/2021movie/DETECTIVE_CONAN_THE_MOVIE_THE_SCARLET_BULLET.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">名偵探柯南：緋色的彈丸</p>
+                <p class="english-name">Detective Conan: The Scarlet...</p>
+                <p class="publish-date">2021-04-16</p>
+            </div>
+        </div>
+        
+        <div class="movieCard action fantasy adventure">
+            <img src="./Final_Web_電影介紹/images/2021movie/MORTAL_KOMBAT.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">真人快打</p>
+                <p class="english-name">MORTAL KOMBAT</p>
+                <p class="publish-date">2021-04-08</p>
+            </div>
+        </div>
+
+        <div class="movieCard action scifi suspense thriller">
+            <img src="./Final_Web_電影介紹/images/2021movie/Godzilla_vs_Kong.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">哥吉拉大戰金剛</p>
+                <p class="english-name">Godzilla vs. Kong</p>
+                <p class="publish-date">2021-03-24</p>
+            </div>
+        </div>
+
+        <div class="movieCard fantasy drama">
+            <img src="./Final_Web_電影介紹/images/series/series02.jpeg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">天橋上的魔術師</p>
+                <p class="english-name">The Illusionist on the Skywalk...</p>
+                <p class="publish-date">2021-02-20</p>
+            </div>
+        </div>
+
+        <div class="movieCard anime comedy">
+            <img src="./Final_Web_電影介紹/images/2021movie/Tom_And_Jerry.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">湯姆貓與傑利鼠</p>
+                <p class="english-name">Tom and Jerry</p>
+                <p class="publish-date">2021-02-10</p>
+            </div>
+        </div>
+
+        <div class="movieCard action drama romance">
+            <img src="./Final_Web_電影介紹/images/2021movie/GATAO_THE_LAST_STRAY.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">角頭－浪流連</p>
+                <p class="english-name">GATAO - The Last Stray</p>
+                <p class="publish-date">2021-02-05</p>
+            </div>
+        </div>
+
+        <div class="movieCard anime romance">
+            <img src="./Final_Web_電影介紹/images/2021movie/JOSEE_THE_TIGER_AND_THE_FISH.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">喬瑟與虎與魚群</p>
+                <p class="english-name">Jose, The Tiger and the Fish</p>
+                <p class="publish-date">2021-01-20</p>
+            </div>
+        </div>
+
+        <div class="movieCard action">
+            <img src="./Final_Web_電影介紹/images/2021movie/Way_Down.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">馬德里金庫盜數90分鐘</p>
+                <p class="english-name">Way Down</p>
+                <p class="publish-date">2021-01-15</p>
+            </div>
+        </div>
+
+        <div class="movieCard drama">
+            <img src="./Final_Web_電影介紹/images/2020movie/Summer_of_85.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">85年的夏天</p>
+                <p class="english-name">Summer of 85</p>
+                <p class="publish-date">2020-12-18</p>
+            </div>
+        </div>
+
+        <div class="movieCard drama">
+            <img src="./Final_Web_電影介紹/images/2020movie/CRITICAL_THINKING.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">高校棋蹟</p>
+                <p class="english-name">Critical Thinking</p>
+                <p class="publish-date">2020-12-18</p>
+            </div>
+        </div>
+
+        <div class="movieCard action adventure drama">
+            <img src="./Final_Web_電影介紹/images/2020movie/WONDER_WOMAN_1984.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">神力女超人1984</p>
+                <p class="english-name">Wonder Woman 1984</p>
+                <p class="publish-date">2020-12-17</p>
+            </div>
+        </div>
+
+        <div class="movieCard comedy">
+            <img src="./Final_Web_電影介紹/images/2020movie/HAPPIEST_SEASON.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">求婚好意外</p>
+                <p class="english-name">Happiest Season</p>
+                <p class="publish-date">2020-12-11</p>
+            </div>
+        </div>
+
+        <div class="movieCard drama comedy">
+            <img src="./Final_Web_電影介紹/images/2020movie/THE_CONFIDENCEMAN_JP.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">信用詐欺師JP：公主篇</p>
+                <p class="english-name">The Confidence Man JP...</p>
+                <p class="publish-date">2020-12-11</p>
+            </div>
+        </div>
+
+        <div class="movieCard action">
+            <img src="./Final_Web_電影介紹/images/2020movie/A_Gift_from_Bob.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">再見街貓BOB</p>
+                <p class="english-name">A Gift from Bob</p>
+                <p class="publish-date">2020-12-10</p>
+            </div>
+        </div>
+
+        <div class="movieCard drama msuic">
+            <img src="./Final_Web_電影介紹/images/2020movie/FIND_YOUR_VOICE.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">熱血合唱團</p>
+                <p class="english-name">Find Your Voice</p>
+                <p class="publish-date">2020-12-04</p>
+            </div>
+        </div>
+
+        <div class="movieCard drama">
+            <img src="./Final_Web_電影介紹/images/2020movie/MY_SWEET_GRAPPA_REMEDIES.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">用甜酒漱口</p>
+                <p class="english-name">My Sweet Grappa Remedies</p>
+                <p class="publish-date">2020-12-04</p>
+            </div>
+        </div>
+
+        <div class="movieCard anime comedy">
+            <img src="./Final_Web_電影介紹/images/2020movie/THE_CROODS_A_NEW_AGE.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">古魯家族：新石代</p>
+                <p class="english-name">The Croods: A New Age</p>
+                <p class="publish-date">2020-11-27</p>
+            </div>
+        </div>
+
+        <div class="movieCard drama">
+            <img src="./Final_Web_電影介紹/images/2020movie/BLACKBIRD.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">說不出的告別</p>
+                <p class="english-name">Way Down</p>
+                <p class="publish-date">2020-11-27</p>
+            </div>
+        </div>
+
+        <div class="movieCard action">
+            <img src="./Final_Web_電影介紹/images/2020movie/Fatman.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">追殺胖老爹</p>
+                <p class="english-name">Fatman</p>
+                <p class="publish-date">2020-11-27</p>
+            </div>
+        </div>
+
+        <div class="movieCard anime">
+            <img src="./Final_Web_電影介紹/images/2020movie/LOOKING_FOR_MAGICAL_DOREMI.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">尋找小魔女Doremi</p>
+                <p class="english-name">Looking For Magical Doremi</p>
+                <p class="publish-date">2020-11-27</p>
+            </div>
+        </div>
+
+        <div class="movieCard drama">
+            <img src="./Final_Web_電影介紹/images/2020movie/Collectors.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">盜墓同盟</p>
+                <p class="english-name">Collectors</p>
+                <p class="publish-date">2020-11-20</p>
+            </div>
+        </div>
+
+        <div class="movieCard drama suspense thriller">
+            <img src="./Final_Web_電影介紹/images/2020movie/GONE_WEDNESDAY.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">消失的星期三</p>
+                <p class="english-name">Gone Wednesday</p>
+                <p class="publish-date">2020-11-20</p>
+            </div>
+        </div>
+
+        <div class="movieCard drama">
+            <img src="./Final_Web_電影介紹/images/2020movie/COME_AWAY.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">愛麗絲與夢幻島</p>
+                <p class="english-name">Come Away</p>
+                <p class="publish-date">2020-11-12</p>
+            </div>
+        </div>
+
+        <div class="movieCard war drama">
+            <img src="./Final_Web_電影介紹/images/2020movie/THE_PAINTED_BIRD.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">異端鳥</p>
+                <p class="english-name">The Painted Bird</p>
+                <p class="publish-date">2020-10-30</p>
+            </div>
+        </div>
+
+        <div class="movieCard action suspense thriller">
+            <img src="./Final_Web_電影介紹/images/2020movie/THE_DOORMAN.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">奪命守門人</p>
+                <p class="english-name">The Doorman</p>
+                <p class="publish-date">2020-10-16</p>
+            </div>
+        </div>
+
+        <div class="movieCard action suspense thriller">
+            <img src="./Final_Web_電影介紹/images/2020movie/THE_SECRET_WE_KEEP.jpg" alt="">
+            <div class="movieInfo">
+                <p class="chinese-name">地下弒的秘密</p>
+                <p class="english-name">The Secrets We Keep</p>
+                <p class="publish-date">2020-10-16</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="movieContent">
+        <div id="close"><p>X</p></div>
+        <div id="poster">
+            <img src="">
+        </div>
+        <div id="textArea">
+            <div class="chineseName">
+                <p>中文片名</p>
+            </div>
+            <div class="englishName">
+                <p>englishName</p>
+            </div>
+            <div class="releaseDate">
+                <p>上映日期：<span>date</span></p>
+            </div>
+            <div class="runningTime">
+                <p>片長：<span>runningTime</span> 分鐘</p>
+            </div>
+            <div class="category">
+                <p>類型：<span>category</span></p>
+            </div>
+            <div class="director">
+                <p>導演：<span>director</span></p>
+            </div>
+            <div class="cast">
+                <p>演員：<span>cast</span> 等人</p>
+            </div>
+            <div class="description">
+                <h2>劇情簡介</h2>
+                <div id="desc"></div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        copyright 2021 G10
+    </div>
+</body>
+</html>
